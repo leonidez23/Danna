@@ -1,0 +1,281 @@
+body{
+	font-family: Arial, Helvectica, sans-serif;
+	font-size:15px;
+	line-height:1.5;
+	padding: 0;
+	background-color: white;
+}
+/*Global*/
+.container{
+	width:80%
+	margin:auto;
+	overflow:hidden;
+}
+
+ul{
+	margin:0;
+    padding:0;
+ }
+ 
+ .button_1{
+	 height:30px;
+	 background: red;
+	 border: 0;
+	 padding-left: 20px;
+	 padding-right: 20px;
+	 color: white;
+ }
+ 
+ .dark{
+	 padding:15px;
+	 background:grey;
+	 color:white;
+	 margin-top:10px;
+	 margin-bottom:10px;
+ }
+ 
+/*Header the color the words at the top*/
+header{
+	background: lightblue;
+	color: white;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom: red solid;
+}
+
+/*color of the links*/
+header a{
+	color: red;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+	
+
+header li{
+	float:left;
+	display:inline;
+	padding: 10px;
+}
+
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	margin:0;	
+}
+
+header nav{
+	float:right;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a{
+color: blue;
+font-weight: bold;
+}	
+
+header a:hover{
+color: Green; 
+font-weight: bold;
+}
+
+
+/*showcasae*/
+/*here using background-size i can fit the image if it doesnt as it's original counter part*/
+#showcase{
+	min-height:400px;
+	background:url('flowers.jpg') no-repeat 0;
+	text-align:center;
+	color: white;
+	background-size: 1500px 600px;
+}
+
+
+#showcase h1{
+		margin-top: 100px;
+		font-size:55px;
+		margin-bottom:10px;
+}
+
+#showcase p{
+	font-size:20px;	
+}
+
+/*this where we design the newsletter*/
+#newsletter{
+	padding:15px;
+	color:white;
+	background-color: grey;
+}
+
+#newsletter h1{
+	float:left;	
+}
+
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+	padding:4px;
+	height:25px
+	width:250px;	
+}
+
+/*Boxes are designed here*/
+
+#boxes{
+	margin-top:20px;
+}
+
+#boxes .box{
+	float:left;
+	text-align: center;
+	width:30%;
+	padding:10px;	
+}
+
+#boxes .box img{
+	width:90px;
+}
+
+/* this is the sidebar*/
+
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+aside#sidebar.quote input, aside#sidebar .quote textarea{
+	width:90%;
+	padding: 5px;
+}
+
+
+
+/*this the column part of the website*/
+article#main-col{
+	float:left;
+	width:65%;	
+}
+
+/*This is the part of the Services*/
+ul#services li{
+	list-style: none;
+	padding:20px;
+	border: pink;
+	margin-bottom:5px;
+	background: light grey;	
+}
+
+
+footer{
+	padding:20px;
+	margin-top:20px;
+	color:white;
+	background-color: lightgreen;
+	text-align: center;
+}
+
+/*media queries*/
+@media(max-width:768px){
+	header #brading,
+	header nav,
+	header nav li,
+	#newsletter h1
+	#newsletter form
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float: none;
+		text-align:center;
+		width: 100%;
+		
+	}
+	
+	header{
+		padding-bottom:20px;
+
+	}
+	
+	#showcase h1{
+		margin-top:40px;
+	}
+	
+	#newsletter button, .quote button{
+		display:block;
+		width:100%;
+		}
+		
+		#newsletter form input[type="email"], .quote input, .quote textarea{
+			width:100%;
+			margin-bottom:5px;
+		}
+		
+}
+
+/*
+*{
+background-color: lightgreen;
+}
+
+
+/*
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="content">
+  <h2>CSS Template</h2>
+  <p>A topnav, content and a footer.</p>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>/*
+
+
+
+
+/*<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Page Title</title> 
+</head> 
+
+<header>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+</header>
+
+<body>
+
+<br>
+<br>
+<center><img src="Husky.jpg"width="400" height="400"></center>
+
+<center><p>This is the dream dog i would one day would love to have</p></center>
+<center><p>For now I must settle down with those two ugly dogs"cookie" and frosty".</p></center> 
+
+</body>
+</html>/*
